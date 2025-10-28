@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Finder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    input {
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 200px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005ea6;
+    }
+    #result {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>User -> Exists or Not</h2>
+    <input type="number" id="celsius" placeholder="Enter UserName" />
+    <br />
+    <button onclick="search()">Convert</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function search() {
+      const nmae = document.getElementById("nmae").value;
+
+      if (name== "") {
+        document.getElementById("result").innerHTML = " Please enter a user!";
+        return;
+      }
+      document.getElementById("result").innerHTML = " User Exits";
+      document.getElementById("result").innerHTML = " Projects Build!";
+
+      
+    }
+  </script>
+</body>
+</html>
